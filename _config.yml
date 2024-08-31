@@ -9,7 +9,7 @@ theme: jekyll-theme-minimal
 destination: docs/
 
 exclude:
-  - "*.html"
+  - "*.md"
   - "*.css"
   - "*.js"
   - "*.png"
@@ -17,6 +17,7 @@ exclude:
   - "*.gif"
   - "*.pdf"
   - "*.ts[x]"
+  - "*.py"
   - "assets/"
   - "scripts/"
   - "styles/"
