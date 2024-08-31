@@ -15,5 +15,5 @@ def generate_navigation(root_dir):
 if __name__ == "__main__":
     root_directory = '.'  # Diretório raiz do seu repositório
     navigation_data = generate_navigation(root_directory)
-    with open('_data/navigation.yml', 'w') as file:
+    with open('docs.yml', 'w') as file:
         yaml.dump(navigation_data, file, default_flow_style=False)

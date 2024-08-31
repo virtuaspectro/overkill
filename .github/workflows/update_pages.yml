@@ -30,7 +30,7 @@ jobs:
           pip install pyyaml
 
       - name: Generate navigation
-        run: python generate_navigation.py
+        run: python docs.py
 
       - name: Build and deploy
         run: |
