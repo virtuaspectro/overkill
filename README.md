@@ -5,3 +5,4 @@ Testing github features
 
 - View 1
 - View 2
+- View 3

@@ -1,4 +1,5 @@
 url: https://virtuaspectro.github.io/overkill
+baseurl: https://virtuaspectro.github.io/overkill
 
 defaults:
   -
