@@ -26,8 +26,8 @@
   url: /.git/branches/
 - title: bb
   url: /.git/objects/bb/
-- title: 6d
-  url: /.git/objects/6d/
+- title: 6c
+  url: /.git/objects/6c/
 - title: '04'
   url: /.git/objects/04/
 - title: e6
@@ -40,22 +40,20 @@
   url: /.git/objects/b0/
 - title: '99'
   url: /.git/objects/99/
+- title: '28'
+  url: /.git/objects/28/
 - title: e2
   url: /.git/objects/e2/
-- title: d3
-  url: /.git/objects/d3/
 - title: b2
   url: /.git/objects/b2/
 - title: '49'
   url: /.git/objects/49/
-- title: '52'
-  url: /.git/objects/52/
 - title: info
   url: /.git/objects/info/
 - title: c1
   url: /.git/objects/c1/
-- title: 9b
-  url: /.git/objects/9b/
+- title: d0
+  url: /.git/objects/d0/
 - title: c2
   url: /.git/objects/c2/
 - title: c8
