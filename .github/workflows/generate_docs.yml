@@ -27,14 +27,18 @@ jobs:
       - name: Build Jekyll site
         run: bundle exec jekyll build -d docs
         
+      - name: Pandoc install
+        uses: pandoc/actions/setup@{main}
+        with:
+          version: 2.19
+
       - name: Convert README.md to index.html
         run: |
           for dir in $(find . -type d); do
             if [ -f "$dir/README.md" ]; then
-              cp "$dir/README.md" "$dir/index.md"
+              pandoc "$dir/README.md" -o "$dir/index.html"
             fi
           done
-          bundle exec jekyll build -d docs
 
       - name: Build and deploy
         run: |
