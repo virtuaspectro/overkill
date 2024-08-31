@@ -4,7 +4,7 @@ baseurl: ""
 url: "https://virtuspectro.github.io/overkill"
 
 markdown: kramdown
-theme: jekyll-theme-slate
+theme: jekyll-theme-minimal
 
 exclude:
   - "*.html"
