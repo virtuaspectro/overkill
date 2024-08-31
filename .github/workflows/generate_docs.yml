@@ -20,7 +20,10 @@ jobs:
         uses: ruby/setup-ruby@v1
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build -d docs
+        run: | 
+          gem install bundler jekyll
+          bundle install
+          bundle exec jekyll build -d docs
 
       - name: Convert README.md to index.html
         run: |
