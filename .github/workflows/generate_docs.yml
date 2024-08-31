@@ -19,20 +19,19 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
 
-      - name: Build Jekyll site
+      - name: Install Gems
         run: | 
           gem install bundler jekyll
           bundle install
-          bundle exec jekyll build -d docs
 
       - name: Convert README.md to index.html
-        uses: docker://pandoc/core:2.9
         run: |
           for dir in $(find . -type d); do
             if [ -f "$dir/README.md" ]; then
-              pandoc "$dir/README.md" -o "$dir/index.html"
+              cp "$dir/README.md" "$dir/index.md"
             fi
           done
+          bundle exec jekyll build -d docs
 
       - name: Build and deploy
         run: |
