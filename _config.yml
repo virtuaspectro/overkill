@@ -1,0 +1,21 @@
+title: Overkill Docs
+description: Auto documentation with Jekyll
+baseurl: ""
+url: "https://virtuspectro.github.io/overkill"
+
+markdown: kramdown
+theme: jekyll-theme-minimal
+
+exclude:
+  - "*.html"
+  - "*.css"
+  - "*.js"
+  - "*.png"
+  - "*.jpg"
+  - "*.gif"
+  - "*.pdf"
+  - "assets/"
+  - "scripts/"
+  - "styles/"
+  - "node_modules/"
+  - "styles/"
