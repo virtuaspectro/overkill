@@ -1,3 +1,6 @@
+url: https://virtuaspectro.github.io
+baseurl: /overkill
+
 defaults:
   -
     scope:
