@@ -3,15 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
+  <title>Components</title>
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
   <div class="sidebar">
-    {% include sidebar.html %}
+    <ul>
+  
+    <li><a href="/components/test/">Fala sério</a></li>
+  
+    <li><a href="/components/">Components</a></li>
+  
+    <li><a href="/">Overkill Front Page</a></li>
+  
+</ul>
+
   </div>
   <div class="content">
-    {{ content | markdownify | liquify }}
+    <h1 id="components">Components”</h1>
+
   </div>
 </body>
 </html>
