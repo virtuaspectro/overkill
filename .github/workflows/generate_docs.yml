@@ -16,27 +16,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-
-      - name: Install Gems
-        run: | 
-          gem install bundler jekyll
-          bundle install
-
-      - name: Build Jekyll site
-        run: bundle exec jekyll build -d docs
-        
-      # - name: Pandoc install
-      #   uses: pandoc/actions/setup@main
-
-      # - name: Convert README.md to index.html
-      #   run: |
-      #     for dir in $(find docs -type d); do
-      #       if [ -f "$dir/README.md" ]; then
-      #         pandoc "$dir/README.md" -o "$dir/index.html"
-      #       fi
-      #     done
+      - name: Move README.md to docs
+        run: |
+          for dir in $(find . -type d); do
+              if ! grep -Fxq "$dir" .gitignore && [ -f "$dir/README.md" ] && [[ $dir != *"/docs"* ]]; then
+                  newdir=$(echo "$dir" | sed "s/\./\.\/docs/")
+                  if [ ! -d "$newdir" ]; then
+                      mkdir -p "$newdir"
+                  fi
+                  cp "$dir/README.md" "$newdir/README.md"
+              fi
+          done
 
       - name: Build and deploy
         run: |
