@@ -28,9 +28,8 @@ jobs:
         run: bundle exec jekyll build -d docs
         
       - name: Pandoc install
-        uses: pandoc/actions/setup@{main}
-        with:
-          version: 2.19
+        uses: pandoc/actions/setup
+
 
       - name: Convert README.md to index.html
         run: |
