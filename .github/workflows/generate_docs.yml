@@ -24,7 +24,7 @@ jobs:
                   if [ ! -d "$newdir" ]; then
                       mkdir -p "$newdir"
                   fi
-                  cp "$dir/README.md" "$newdir/README.md"
+                  cp "$dir/README.md" "$newdir/index.md"
               fi
           done
 
