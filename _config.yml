@@ -19,6 +19,7 @@ exclude:
   - "*.ts[x]"
   - "*.py"
   - "docs/"
+  - "*.yml"
   - ".git/"
   - ".github/"
   - "assets/"
