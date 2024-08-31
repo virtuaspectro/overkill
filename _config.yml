@@ -6,6 +6,8 @@ url: "https://virtuspectro.github.io/overkill"
 markdown: kramdown
 theme: jekyll-theme-minimal
 
+destination: docs/
+
 exclude:
   - "*.html"
   - "*.css"
@@ -14,8 +16,11 @@ exclude:
   - "*.jpg"
   - "*.gif"
   - "*.pdf"
+  - "*.ts[x]"
   - "assets/"
   - "scripts/"
   - "styles/"
   - "node_modules/"
   - "styles/"
+  - "android/"
+  - "ios/"
