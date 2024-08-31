@@ -1,6 +1,6 @@
 title: Overkill Docs
 description: Auto documentation with Jekyll
-baseurl: ""
+baseurl: "https://virtuspectro.github.io/overkill/docs"
 url: "https://virtuspectro.github.io/overkill"
 
 markdown: kramdown
