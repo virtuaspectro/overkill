@@ -33,7 +33,7 @@ jobs:
 
       - name: Convert README.md to index.html
         run: |
-          for dir in $(find . -type d); do
+          for dir in $(find docs -type d); do
             if [ -f "$dir/README.md" ]; then
               pandoc "$dir/README.md" -o "$dir/index.html"
             fi

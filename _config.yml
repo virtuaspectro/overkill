@@ -1,3 +1,25 @@
 markdown: kramdown
 kramdown:
   input: GFM
+
+destination: docs/
+
+exclude:
+  - "*.css"
+  - "*.js"
+  - "*.png"
+  - "*.jpg"
+  - "*.gif"
+  - "*.pdf"
+  - "*.ts[x]"
+  - "*.py"
+  - "docs/"
+  - ".git/"
+  - ".github/"
+  - "assets/"
+  - "scripts/"
+  - "styles/"
+  - "node_modules/"
+  - "styles/"
+  - "android/"
+  - "ios/"
