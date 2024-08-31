@@ -1,7 +1,7 @@
 <ul>
   {% for page in site.pages %}
     <script>
-      console.log(page)
+      console.log({{ page }})
     </script>
     <li><a href="{{ page.url }}">{{ page.title }}</a></li>
   {% endfor %}
