@@ -26,7 +26,7 @@ jobs:
           bundle exec jekyll build -d docs
 
       - name: Convert README.md to index.html
-      - uses: docker://pandoc/core:2.9
+        uses: docker://pandoc/core:2.9
         run: |
           for dir in $(find . -type d); do
             if [ -f "$dir/README.md" ]; then
