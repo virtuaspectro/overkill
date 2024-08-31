@@ -4,6 +4,13 @@ kramdown:
 
 destination: docs/
 
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
 exclude:
   - "*.css"
   - "*.js"
